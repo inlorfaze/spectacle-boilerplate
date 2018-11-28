@@ -30,7 +30,7 @@ const theme = createTheme({
   quaternary: "#CECECE"
 }, {
   primary: {
-    name: 'Pacifico',
+    name: 'Josefin Sans',
     googleFont: true,
     styles: ['400', '500']
   },
@@ -49,11 +49,8 @@ export default class Presentation extends React.Component {
           <Heading size={1} lineHeight={2} textColor="secondary" fit>
             Happy Holidays
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" bold>
-            From the boys:
-          </Text>
-          <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" size={1} >
-          Finley, Jack, Cody, Leo, Sean, TJ, and Sergio
+          <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" fit size={1} >
+          Finley, Jack, Cody, Leo, Sean, TJ, Sergio
           </Text>
         </Slide>
         <Slide transition={["slide"]} >
