@@ -46,11 +46,11 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={200} theme={theme}>
         <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} lineHeight={2} textColor="secondary">
-            Merry Christmas
+          <Heading size={1} lineHeight={2} textColor="secondary" fit>
+            Happy Holidays
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" bold>
-            From:
+            From the boys:
           </Text>
           <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" size={1} >
           Finley, Jack, Cody, Leo, Sean, TJ, and Sergio
