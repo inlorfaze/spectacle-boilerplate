@@ -11,36 +11,54 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Image
 } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
-
+import finleyCody from "../assets/finley-cody.jpg"
 // Require CSS
 require("normalize.css");
 
+
+
 const theme = createTheme({
   primary: "white",
-  secondary: "#1F2022",
-  tertiary: "#03A9FC",
+  secondary: "#cc3333",
+  tertiary: "#393939",
   quaternary: "#CECECE"
 }, {
-  primary: "Montserrat",
-  secondary: "Helvetica"
+  primary: {
+    name: 'Pacifico',
+    googleFont: true,
+    styles: ['400', '500']
+  },
+  secondary: {
+    name: 'Cabin',
+    googleFont: true,
+    styles: ['400', '500', '700']
+  },
 });
 
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+      <Deck transition={["zoom", "slide"]} transitionDuration={200} theme={theme}>
         <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+          <Heading size={1} lineHeight={2} textColor="secondary">
+            Merry Christmas
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+          <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" bold>
+            From:
           </Text>
+          <Text margin="10px 0 0" textColor="tertiary" textFont="secondary" size={1} >
+          Finley, Jack, Cody, Leo, Sean, TJ, and Sergio
+          </Text>
+        </Slide>
+        <Slide transition={["slide"]} >
+          <Image src={finleyCody} alt="finley and cody" />
+
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
